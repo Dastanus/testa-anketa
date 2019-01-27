@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/noUiSlider-12.1.0/distribute/nouislider.min.css">
+    <title>Test</title>
+</head>
+<body>
+    <section class="anketa container">
+        <div class="description">
+            <h1 class="title">
+                Title of test
+            </h1>
+            <p>
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            </p>
+            <button type="button" class="start">Begin test</button>
+        </div>
+        <div class="test">
+            <form action="xxx" method="POST" class="test-form" onsubmit="return false">
+                <div class="timer">
+                    <p><span id="timer"></span></p>
+                </div>
+                <div class="question" data-type="radio">
+                    <h2 class="Question-title">First question</h2>
+                    <label><input name="q1" type="radio" value="1"><span>Lorem ipsum</span></label>
+                    <label><input name="q1" type="radio" value="2"><span>Lorem ipsum</span></label>
+                    <label><input name="q1" type="radio" value="3"><span>Lorem ipsum</span></label>
+                    <label><input name="q1" type="radio" value="4"><span>Lorem ipsum</span></label>   
+                </div>
+                <div class="question" data-type="checkbox">
+                    <h2 class="Question-title">First question</h2>
+                    <label><input type="checkbox" name="second" value="1"><span>Lorem ipsum</span></label>
+                    <label><input type="checkbox" name="second" value="2"><span>Lorem ipsum</span></label>    
+                    <label><input type="checkbox" name="second" value="3"><span>Lorem ipsum</span></label> 
+                    <label><input type="checkbox" name="second" value="4"><span>Lorem ipsum</span></label> 
+                </div>
+                <div class="question checkb-image" data-type="checkbox">
+                    <h2 class="Question-title">First question</h2>
+                    <label><input type="checkbox" name="second" value="1"><img src="img/T02092_10.jpg" alt=""></label>
+                    <label><input type="checkbox" name="second" value="2"><img src="img/T02092_10.jpg" alt=""></label>    
+                    <label><input type="checkbox" name="second" value="3"><img src="img/T02092_10.jpg" alt=""></label> 
+                    <label><input type="checkbox" name="second" value="4"><img src="img/T02092_10.jpg" alt=""></label>  
+                    <label><input type="checkbox" name="second" value="5"><img src="img/T02092_10.jpg" alt=""></label> 
+                    <label><input type="checkbox" name="second" value="6"><img src="img/T02092_10.jpg" alt=""></label> 
+                </div>
+                <div class="question" data-type="range">
+                    <h2 class="Question">First question</h2>
+                    <p class="range">
+                        <p id="skip-value-lower">0</p>
+                        <div id="skipstep"></div>
+                        <p id="skip-value-upper">100</p>
+                    </p>
+                </div>
+                <div class="question" data-type="input-text">
+                    <h2 class="Question">First question</h2>
+                    <label>Answer <input type="text"></label>
+                </div>
+                <p class="navigation">
+                    <button type="button" name="prev" class="prev">prev</button>
+                    <button type="button" name="next" class="next">next</button>
+                </p>
+                <p class="button-result">
+                    <button type="button" name="result" id="result">Result!</button>   
+                </p>
+                 
+                <!-- <div class="first-question quest">
+                    <h2 class="Question">First question</h2>
+                        <p>
+                            <input name="first" name="second" type="radio" value="1" value="1">Lorem ipsum
+                            <input name="first" type="radio" value="2">Lorem ipsum
+                            <input name="first" type="radio" value="3">Lorem ipsum
+                            <input name="first" type="radio" value="4">Lorem ipsum
+                        </p>
+                        <button type="button" name="next" class="next">next</button>
+                    </p>
+                </div>
+                <div class="second-question quest">
+                    <h2 class="Question">First question</h2>
+                    <p><input type="checkbox" name="second" value="1"><span>Lorem ipsum</span></p>
+                    <p><input type="checkbox" name="second" value="2"><span>Lorem ipsum</span></p>
+                    <p><input type="checkbox" name="second" value="3"><span>Lorem ipsum</span></p>
+                    <p><input type="checkbox" name="second" value="4"><span>Lorem ipsum</span></p>
+                    <p class="navigation">
+                        <button type="button" name="prev" class="prev">prev</button>
+                        <button type="button" name="next" class="next">next</button>
+                    </p>
+                </div>
+                <div class="third-question quest">
+                    <h2 class="Question">First question</h2>
+                    <p class="checkb">
+                        <label><input type="checkbox" name="second" value="1"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="2"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="3"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="4"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="5"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="6"><img src="img/T02092_10.jpg" alt=""></label>
+                    </p>
+                    <p class="navigation">
+                        <button type="button" name="prev" class="prev">prev</button>
+                        <button type="button" name="next" class="next">next</button>
+                    </p>
+                </div>
+                <div class="fourth-question quest">
+                    <h2 class="Question">First question</h2>
+                    <p class="range">
+                        <p id="skip-value-lower">0</p>
+                        <div id="skipstep"></div>
+                        <p id="skip-value-upper">100</p>
+                    </p>
+                    <p class="navigation">
+                        <button type="button" name="prev" class="prev">prev</button>
+                        <button type="button" name="next" class="next">next</button>
+                    </p>
+                </div>
+                <div class="fifth-question quest">
+                    <h2 class="Question">First question</h2>
+                    <label>Answer <input type="text"></label>
+                    <p class="navigation">
+                        <button type="button" name="prev" class="prev">prev</button>
+                        <button type="submit" name="next" class="Result">Results</button>
+                    </p>
+                </div> -->
+            </form>
+        </div>
+        <div class="results">
+            <h1 class="title">
+                Title of test
+            </h1>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/noUiSlider-12.1.0/distribute/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
