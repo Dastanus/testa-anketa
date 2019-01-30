@@ -27,53 +27,56 @@
             </p>
             <button type="button" class="start">Begin test</button>
         </div>
-        <div class="test">
+        <div class="test" id="test">
             <form action="xxx" method="POST" class="test-form" onsubmit="return false">
                 <div class="timer">
                     <p><span id="timer"></span></p>
                 </div>
-                <div class="question" data-type="radio">
-                    <h2 class="Question-title">First question</h2>
-                    <label><input name="q1" type="radio" value="1"><span>Lorem ipsum</span></label>
-                    <label><input name="q1" type="radio" value="2"><span>Lorem ipsum</span></label>
-                    <label><input name="q1" type="radio" value="3"><span>Lorem ipsum</span></label>
-                    <label><input name="q1" type="radio" value="4"><span>Lorem ipsum</span></label>   
-                </div>
-                <div class="question" data-type="checkbox">
-                    <h2 class="Question-title">First question</h2>
-                    <label><input type="checkbox" name="second" value="1"><span>Lorem ipsum</span></label>
-                    <label><input type="checkbox" name="second" value="2"><span>Lorem ipsum</span></label>    
-                    <label><input type="checkbox" name="second" value="3"><span>Lorem ipsum</span></label> 
-                    <label><input type="checkbox" name="second" value="4"><span>Lorem ipsum</span></label> 
-                </div>
-                <div class="question checkb-image" data-type="checkbox">
-                    <h2 class="Question-title">First question</h2>
-                    <label><input type="checkbox" name="second" value="1"><img src="img/T02092_10.jpg" alt=""></label>
-                    <label><input type="checkbox" name="second" value="2"><img src="img/T02092_10.jpg" alt=""></label>    
-                    <label><input type="checkbox" name="second" value="3"><img src="img/T02092_10.jpg" alt=""></label> 
-                    <label><input type="checkbox" name="second" value="4"><img src="img/T02092_10.jpg" alt=""></label>  
-                    <label><input type="checkbox" name="second" value="5"><img src="img/T02092_10.jpg" alt=""></label> 
-                    <label><input type="checkbox" name="second" value="6"><img src="img/T02092_10.jpg" alt=""></label> 
-                </div>
-                <div class="question" data-type="range">
-                    <h2 class="Question">First question</h2>
-                    <p class="range">
-                        <p id="skip-value-lower">0</p>
-                        <div id="skipstep"></div>
-                        <p id="skip-value-upper">100</p>
+                <fieldset id="fieldset">
+                    <div class="question" data-type="radio">
+                        <h2 class="Question-title">First question</h2>
+                        <label><input name="q1" type="radio" value="1"><span>Lorem ipsum</span></label>
+                        <label><input name="q1" type="radio" value="2"><span>Lorem ipsum</span></label>
+                        <label><input name="q1" type="radio" value="3"><span>Lorem ipsum</span></label>
+                        <label><input name="q1" type="radio" value="4"><span>Lorem ipsum</span></label>   
+                    </div>
+                    <div class="question" data-type="checkbox">
+                        <h2 class="Question-title">First question</h2>
+                        <label><input type="checkbox" name="second" value="1"><span>Lorem ipsum</span></label>
+                        <label><input type="checkbox" name="second" value="2"><span>Lorem ipsum</span></label>    
+                        <label><input type="checkbox" name="second" value="3"><span>Lorem ipsum</span></label> 
+                        <label><input type="checkbox" name="second" value="4"><span>Lorem ipsum</span></label> 
+                    </div>
+                    <div class="question checkb-image" data-type="checkbox">
+                        <h2 class="Question-title">First question</h2>
+                        <label><input type="checkbox" name="second" value="1"><img src="img/T02092_10.jpg" alt=""></label>
+                        <label><input type="checkbox" name="second" value="2"><img src="img/T02092_10.jpg" alt=""></label>    
+                        <label><input type="checkbox" name="second" value="3"><img src="img/T02092_10.jpg" alt=""></label> 
+                        <label><input type="checkbox" name="second" value="4"><img src="img/T02092_10.jpg" alt=""></label>  
+                        <label><input type="checkbox" name="second" value="5"><img src="img/T02092_10.jpg" alt=""></label> 
+                        <label><input type="checkbox" name="second" value="6"><img src="img/T02092_10.jpg" alt=""></label> 
+                    </div>
+                    <div class="question" data-type="range" id="range">
+                        <h2 class="Question">First question</h2>
+                        <p class="range">
+                            <p id="skip-value-lower">0</p>
+                            <div id="skipstep"></div>
+                            <p id="skip-value-upper">100</p>
+                        </p>
+                    </div>
+                    <div class="question" data-type="input-text" id="inptext">
+                        <h2 class="Question">First question</h2>
+                        <label>Answer <input type="text"></label>
+                    </div>
+                    <p class="navigation">
+                        <button type="button" name="prev" class="prev">prev</button>
+                        <button type="button" name="next" class="next">next</button>
                     </p>
-                </div>
-                <div class="question" data-type="input-text">
-                    <h2 class="Question">First question</h2>
-                    <label>Answer <input type="text"></label>
-                </div>
-                <p class="navigation">
-                    <button type="button" name="prev" class="prev">prev</button>
-                    <button type="button" name="next" class="next">next</button>
-                </p>
-                <p class="button-result">
-                    <button type="button" name="result" id="result">Result!</button>   
-                </p>
+                    <p class="button-result">
+                        <button type="button" name="result" id="result">Result!</button>   
+                    </p>
+                </fieldset>
+                
                  
                 <!-- <div class="first-question quest">
                     <h2 class="Question">First question</h2>
